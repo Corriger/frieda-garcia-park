@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-frieda-garcia-park.com
+192.241.160.221
 
 [web]
-frieda-garcia-park.com
+192.241.160.221
