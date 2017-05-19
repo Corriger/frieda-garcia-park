@@ -5,9 +5,9 @@
 wordpress_sites:
   frieda-garcia-park.com:
     site_hosts:
-      - canonical: frieda-garcia-park.com
+      - canonical: 192.241.160.221
         redirects:
-          - www.frieda-garcia-park.com
+          - 192.241.160.221
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:roots/frieda-garcia-park.com.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
