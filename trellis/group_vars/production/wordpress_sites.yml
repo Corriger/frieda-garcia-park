@@ -3,15 +3,13 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  frieda-garcia-park.com:
+  http://174.138.56.109/:
     site_hosts:
-      - canonical: 104.131.109.53
-        redirects:
-          - 104.131.109.53
+      - canonical: http://174.138.56.109/
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:corriger/frieda-garcia-park.git # replace with your Git repo URL
-    repo_subtree_path: site/web/app/themes/sage # relative path to your Bedrock/WP directory in your repo
-    branch: testing
+    repo_subtree_path: sage # relative path to your Bedrock/WP directory in your repo
+    branch: testing-three
     multisite:
       enabled: false
     ssl:
